@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	
+	Design 				by Hamsa Ganesh
+	Development			by Hamsa Ganesh
+	Maintainence		by Hamsa Ganesh
+	Animations			by Hamsa Ganesh
+
+# THANKS
+
+    Sassy starter		by Mina Markham
+    Content writing		by Joanne Carlo
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

@@ -1,0 +1,66 @@
+
+/*==================================================
+=            base is used as intended            =
+==================================================*/
+
+
+@viewport { width: device-width; }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  &:before,
+  &:after { box-sizing: inherit; }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+
+
+section{
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer.footer__style--reveal{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    bottom: -60px;
+    z-index: -1;;
+    @include bp(sm){
+      height: calc(100vh - 60px);
+      position: fixed;
+    }
+  
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}

@@ -23,8 +23,15 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
   color: #4F4D47;
+  height: 100%;
+  background: #eee;
 }
 
+main{
+  @include bp(sm){
+    padding-bottom: 4.5rem;
+  }
+}
 a {
   background: transparent;
   text-decoration: none;

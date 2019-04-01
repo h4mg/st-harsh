@@ -35,6 +35,7 @@ dd{
 }
 
 .social a{
+    display: inline-block;
     margin-right: 1.5rem;
 }
 
@@ -123,5 +124,20 @@ header{
     padding: 1.5rem;
     border: 1px solid #848A5F;
     background: #fff;
-    color: #848A5F;
+    color: #4F4D47;
+}
+
+a.btn{
+    transition: all 0.1s ease;
+    &:hover{
+        background: transparentize(#fff, 0.5);
+    }
+}
+
+.social a{
+    transition: all 0.1s ease;
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.1)
+    }
 }

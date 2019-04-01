@@ -1,8 +1,8 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/powered-by-netflix.svg)](http://forthebadge.com)
 
-# Kruna by godrej [![Stories in Ready](https://badge.waffle.io/minamarkham/sassy-starter.png?label=ready&title=Ready)](https://waffle.io/minamarkham/sassy-starter)
+# Files for Harsh Roongta public website [![Stories in Ready](https://badge.waffle.io/minamarkham/sassy-starter.png?label=ready&title=Ready)](https://waffle.io/minamarkham/sassy-starter)
 
-Styles are broken down into the following groups: **Base, Layout, Atoms, Molecules, Organisms, States, Themes, Utilities and Overrides**
+Styles are broken down into the following groups: **Base, Index, Media & Type**
 
 ## Getting Started
 
@@ -131,38 +131,12 @@ _For theming: add separate file (theme.scss) in`src/scss/themes/`, override the 
 │   ├── js
 │   ├── robots.txt
 │   └── scss
-│       ├── atoms
-│       │   └── _index.scss
 │       ├── base
 │       │   ├── _base.scss
 │       │   └── _index.scss
-│       ├── layout
-│       │   └── _index.scss
-│       ├── libs
-│       │   ├── _index.scss
-│       │   ├── _normalize.scss
-│       │   └── _pesticide.scss
-│       ├── molecules
-│       │   └── _index.scss
-│       ├── organisms
-│       │   └── _index.scss
-│       ├── overrides
-│       │   └── _index.scss
-│       ├── states
-│       │   ├── _index.scss
-│       │   └── _print.scss
-│       ├── themes
-│       │   └── rebeccapurple.scss
-│       ├── utilities
-│       │   ├── _colors.scss
-│       │   ├── _config.scss
-│       │   ├── _fonts.scss
-│       │   ├── _functions.scss
-│       │   ├── _index.scss
-│       │   ├── _mixins.scss
-│       │   └── _typography.scss
-│       ├── styles.scss
-│       └── _shame.scss
+|       |   └── _media.scss
+|       |   └── _type.scss
+│       └── styles.scss
 ├── gulpfile.js
 └── package.json
 ```

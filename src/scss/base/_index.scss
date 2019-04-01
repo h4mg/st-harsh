@@ -16,7 +16,7 @@
    margins & padding
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, figure, img{
     margin: 0;
 }
 
@@ -56,10 +56,7 @@ header{
 }
 
 main{
-  
-
-        background: #eee;
-
+    background: #eee;
 }
 
 section{
@@ -82,3 +79,49 @@ section{
     }
 }
 
+header .wrapper, figure{
+    display: flex;
+}
+
+header .wrapper .text{
+    align-self: center;
+    
+}
+
+figure{
+    align-items: flex-end;
+}
+
+section, .text{
+    flex: 0 1 75%;
+}
+aside, figure{
+    flex: 0 1 25%;
+}
+
+header{
+    img{
+        max-width: 300px;
+    }
+    .wrapper{
+        
+    }
+}
+
+@include bp(sm){
+    section{
+        margin-top: -15rem;
+    }
+}
+/* ==========================================================================
+   button
+   ========================================================================== */
+
+.btn{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #848A5F;
+    background: #fff;
+    color: #848A5F;
+}

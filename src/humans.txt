@@ -3,18 +3,16 @@
 
 # TEAM
 	
-	Design 				by Hamsa Ganesh
-	Development			by Hamsa Ganesh
-	Maintainence		by Hamsa Ganesh
-	Animations			by Hamsa Ganesh
+	Design 				by Hamsa Ganesh for Thoughtput
+	Development			by Hamsa Ganesh for Thoughtput
+	Maintainence		by Hamsa Ganesh for Thoughtput
+
 
 # THANKS
 
     Sassy starter		by Mina Markham
-    Content writing		by Joanne Carlo
 
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, github pages

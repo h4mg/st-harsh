@@ -251,25 +251,13 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
   color: #4F4D47;
-}
-
-section {
-  width: 100%;
-  min-height: 100vh;
-}
-
-footer.footer__style--reveal {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  bottom: -60px;
-  z-index: -1;
+  height: 100%;
+  background: #eee;
 }
 
 @media (min-width: 800px) {
-  footer.footer__style--reveal {
-    height: calc(100vh - 60px);
-    position: fixed;
+  main {
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -289,9 +277,113 @@ video {
   height: auto;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+/*
+   sizes
+   ========================================================================== */
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+h2 {
+  font-family: 'PT Serif', georgia, serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  display: inline-block;
+  width: 7ch;
+}
+
+@media (min-width: 500px) {
+  h2 {
+    width: 100%;
+    font-size: 4.8rem;
+    line-height: 1;
+  }
+}
+
+h3, a.btn {
+  font-size: 1.2rem;
+  letter-spacing: 0.33px;
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+dt, dd, h4 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  dt, dd, h4 {
+    font-size: 1.8rem;
+  }
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 2.4rem;
+  }
+}
+
+/*
+   other
+   ========================================================================== */
+/* transformations */
+h3, a.btn {
+  text-transform: uppercase;
+}
+
+/* weights */
+h1, dt, h4 {
+  font-weight: bold;
+}
+
+h3, h5, p {
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+/* color */
+dt, h4 {
+  color: #4990E2;
+}
+
+h2 {
+  color: #fff;
+  padding-left: 3rem;
+  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  position: relative;
 }
 
 /*==================================================
@@ -317,25 +409,13 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
   color: #4F4D47;
-}
-
-section {
-  width: 100%;
-  min-height: 100vh;
-}
-
-footer.footer__style--reveal {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  bottom: -60px;
-  z-index: -1;
+  height: 100%;
+  background: #eee;
 }
 
 @media (min-width: 800px) {
-  footer.footer__style--reveal {
-    height: calc(100vh - 60px);
-    position: fixed;
+  main {
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -355,7 +435,136 @@ video {
   height: auto;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+/* ==========================================================================
+   margins & padding
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, p, figure, img {
+  margin: 0;
+}
+
+h1, dt, h4 {
+  margin-bottom: 1.5rem;
+}
+
+.social,
+h3, p, dd {
+  margin-bottom: 3rem;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+header img {
+  display: block;
+  margin-bottom: 0;
+}
+
+section, aside {
+  padding: 4.5rem 3rem;
+}
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+header {
+  background: #4F4D47;
+}
+
+main {
+  background: #eee;
+}
+
+section {
+  background: white;
+}
+
+@media (min-width: 800px) {
+  section {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ==========================================================================
+   layout
+   ========================================================================== */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header .wrapper, figure {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .wrapper .text {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+figure {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+section, .text {
+  -ms-flex: 0 1 75%;
+      flex: 0 1 75%;
+}
+
+aside, figure {
+  -ms-flex: 0 1 25%;
+      flex: 0 1 25%;
+}
+
+header img {
+  max-width: 300px;
+}
+
+@media (min-width: 800px) {
+  section {
+    margin-top: -15rem;
+  }
+}
+
+/* ==========================================================================
+   button
+   ========================================================================== */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #848A5F;
+  background: #fff;
+  color: #4F4D47;
+}
+
+a.btn {
+  transition: all 0.1s ease;
+}
+
+a.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.social a {
+  transition: all 0.1s ease;
+}
+
+.social a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }

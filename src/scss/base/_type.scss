@@ -1,0 +1,92 @@
+/*
+   sizes
+   ========================================================================== */
+
+html{
+    font-size: 10px;
+    font-size: 62.5%;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    @include bp(sm){
+        font-size: 4.8rem;
+    }
+}
+
+h2{
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 1.5rem;
+    @include bp(sm){
+        font-size: 3rem;
+    }
+}
+
+h3, a.btn{
+    font-size: 1.2rem;
+    letter-spacing: 0.33px;
+    font-weight: 500;
+    
+}
+
+h3{
+    @include bp(sm){
+        font-size: 1.8rem;
+    }
+}
+
+dt, dd, h4{
+    font-size: 1.5rem;
+    @include bp(sm){
+        font-size: 1.8rem;
+    }
+}
+
+h5{
+    font-size: 1.2rem;
+    @include bp(sm){
+        font-size: 1.5rem;
+    }
+}
+
+
+p{
+    font-size: 1.5rem;
+    @include bp(sm){
+        font-size: 2.4rem;
+    }
+}
+
+/*
+   other
+   ========================================================================== */
+
+
+/* transformations */
+
+h3, a.btn{
+    text-transform: uppercase;
+}
+
+/* weights */
+
+h1, dt, h4{
+    font-weight: bold;
+}
+
+h2, h3, h5, p{
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+/* color */
+
+dt, h4{
+    color: #4990E2;
+}
+
+h2{
+    color: #aaaaaa;
+}

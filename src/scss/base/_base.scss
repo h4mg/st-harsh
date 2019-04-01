@@ -25,26 +25,6 @@ body {
   color: #4F4D47;
 }
 
-
-
-section{
-  width: 100%;
-  min-height: 100vh;
-}
-
-footer.footer__style--reveal{
-    width: 100%;
-    height: auto;
-    padding-top: 60px;
-    bottom: -60px;
-    z-index: -1;;
-    @include bp(sm){
-      height: calc(100vh - 60px);
-      position: fixed;
-    }
-  
-}
-
 a {
   background: transparent;
   text-decoration: none;
@@ -61,7 +41,3 @@ video {
     height: auto;
 }
 
-ul{
-  list-style: none;
-  padding-left: 0;
-}
